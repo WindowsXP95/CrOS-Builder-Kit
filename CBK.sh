@@ -1,5 +1,5 @@
 reset
-whiptail --msgbox "Chromium OS Build kit Compiler; Made by G. Disney" 10 70
+whiptail --msgbox "CrOS Builder kit Compiler; Made by TheDevDude95" 10 70
 whiptail --msgbox "Notice: This is for 64bit only! This program only intention is to simplify the dev-build process." 10 70
 uname -m
 chmod +x ${HOME}/CBK/scripts/Reposync.sh
