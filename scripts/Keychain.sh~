@@ -1,4 +1,4 @@
-read -r -p "Chromium Build Kit -Alpha By G. Disney & E. Bryant" key
+read -r -p "CrOS Builder Kit By WindowsXP95" key
 [...]
 read -r -p "All source code from the Chromium OS project, www.chromium.org/chromium-os/ " key
 [...]
