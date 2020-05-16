@@ -1,5 +1,5 @@
 Enter these commands into trunk, lazy way is to copy & paste.
-export BOARD=x86-generic
+export BOARD=amd64-generic
 ./setup_board --board=${BOARD}
 ./set_shared_user_password.sh 
 ./build_packages --board=${BOARD} 
