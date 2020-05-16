@@ -1,0 +1,37 @@
+reset
+whiptail --msgbox "Taking Ownership" 10 70 
+sudo chown g ${HOME}/chromiumos/
+sudo chown g ${HOME}/chromiumos/chromite/
+tar -xvzf ${HOME}/CBK/scripts/input.tar.gz
+sudo cp input.sh ${HOME}/chromiumos/chromite/bin/
+sudo cp input.sh ${HOME}/chromiumos/src/scripts/
+sudo chown g ${HOME}/chromiumos/chromium/
+sudo chown g ${HOME}/chromiumos/depot_tools/
+sudo chown g ${HOME}/chromiumos/rootfs/
+sudo chown g ${HOME}/chromiumos/src/
+sudo chown g ${HOME}/chromiumos/src/scripts/
+sudo chown g ${HOME}/chromiumos/chromite/appengine/
+sudo chown g ${HOME}/chromiumos/chromite/bin/
+sudo chown g ${HOME}/chromiumos/chromite/buildbot/
+sudo chown g ${HOME}/chromiumos/chromite/contrib/
+sudo chown g ${HOME}/chromiumos/chromite/depot_tools/
+sudo chown g ${HOME}/chromiumos/chromite/scripts/
+sudo chown g ${HOME}/chromiumos/chromite/lib/
+sudo chown g ${HOME}/chromiumos/chromite/rootfs/
+sudo chown g ${HOME}/chromiumos/chromite/scripts/
+sudo chown g ${HOME}/chromiumos/chromite/specs/
+sudo chown g ${HOME}/chromiumos/chromite/scripts/bbuild.sh
+sudo chown g ${HOME}/chromiumos/chromite/scripts/cros_sdk.py
+sudo chown g ${HOME}/chromiumos/chromite/scripts/input.sh
+sudo chown g ${HOME}/chromiumos/chromite/bin/cros_sdk
+sudo chown g ${HOME}/chromiumos/chromite/bin/cros_sdk.py
+sudo chown g ${HOME}/chromiumos/chromite/scripts/input.sh
+sudo chown g ${HOME}/chromiumos/src/scripts/
+sudo chown g ${HOME}/chromiumos/src/scripts/input.sh
+sudo chown g ${HOME}/chromiumos/src/scripts/build.sh
+sudo chown g ${HOME}/chromiumos/src/scripts/build_image
+sudo chown g ${HOME}/chromiumos/src/scripts/build_kernel_image.sh
+sudo chown g ${HOME}/chromiumos/src/scripts/build_packages
+sudo chown g ${HOME}/chromiumos/src/scripts/set_shared_user_password.sh
+sudo chown g ${HOME}/chromiumos/src/scripts/setup_board
+sudo chown g ${HOME}/chromiumos/src/scripts/image_to_usb.sh

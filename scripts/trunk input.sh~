@@ -1,0 +1,12 @@
+
+
+
+whiptail --msgbox "Copy & paste into other terminal; 
+export BOARD=x86-generic
+./setup_board --board=${BOARD}; 
+./set_shared_user_password.sh; 
+./set_shared_user_password.sh; 
+./build_packages --board=${BOARD};
+./build_image --board=${BOARD} --noenable_rootfs_verification dev 
+./image_to_usb.sh --board=${BOARD}" 20 70 
+

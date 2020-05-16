@@ -1,0 +1,20 @@
+read -r -p "Chromium Build Kit -Alpha By G. Disney & E. Bryant" key
+[...]
+read -r -p "All source code from the Chromium OS project, www.chromium.org/chromium-os/ " key
+[...]
+sudo aptitude install git-core gitk git-gui subversion curl
+git clone https://git.chromium.org/chromium/tools/depot_tools.git
+svn up ~/depot_tools
+export PATH="$PATH":`pwd`/depot_tools
+
+ git config --global user.email "you@example.com"
+ git config --global user.name "Your Name"
+
+ssh-keygen -t rsa -f ~/.ssh/chromium
+sudo aptitude install keychain
+eval `keychain --eval ~/.ssh/chromium`
+mkdir -p ${HOME}/chromiumos
+mkdir -p /usr/local/path/to/source/chromiumos
+
+read -r -p "Repo sync about to start, this can take some time; press any key to begin..." key
+[...]

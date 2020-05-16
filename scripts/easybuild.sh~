@@ -1,0 +1,5 @@
+cd ${SOURCE_REPO}/chromite
+
+cros_sdk -- ./build_packages --board=${board}
+cros_sdk -- ./build_image --board=${board}
+cros_sdk -- ./image_to_usb.sh --board=${board}

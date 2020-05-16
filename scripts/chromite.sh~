@@ -1,0 +1,20 @@
+reset
+whiptail --msgbox "Chromite build to begin" 10 70
+git clone https://git.chromium.org/chromium/tools/depot_tools.git 
+svn up ~/depot_tools
+export PATH="$PATH":`pwd`/depot_tools
+sudo ssh-keygen -t rsa -f ~/.ssh/chromium
+sudo aptitude install keychain 
+eval `keychain --eval ~/.ssh/chromium`
+sudo mkdir -p ${HOME}/chromiumos
+sudo mkdir -p /usr/local/path/to/source/chromiumos
+gclient --version
+cd ~/chromiumos
+repo sync
+cd ${HOME}/chromiumos
+repo init -u http://git.chromium.org/chromiumos/manifest.git [-m minilayout.xml]
+repo sync
+chromite build x86-generic
+cd ~/chromiumos
+chromite
+

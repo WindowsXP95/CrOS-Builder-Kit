@@ -1,0 +1,17 @@
+
+
+#!./expect -f
+timeout 20
+spawn export BOARD=x86-generic
+spawn ./setup_board --board=${BOARD}; 
+spawn ./set_shared_user_password.sh; 
+spawn ./set_shared_user_password.sh; 
+spawn ./build_packages --board=${BOARD};
+spawn ./build_image --board=${BOARD} --noenable_rootfs_verification dev 
+spawn ./image_to_usb.sh --board=${BOARD}
+expect "enter."
+interact 
+
+whiptail --msgbox "Enjoy Dev-Chromium OS" 10 70
+ 
+
