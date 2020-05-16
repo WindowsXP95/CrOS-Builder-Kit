@@ -1,0 +1,31 @@
+read -r -p "Chromium Build kit Compiler" key 
+[....]
+
+gksu
+${HOME}/CBK/scripts/Reposync.sh
+break
+gksu -K
+${HOME}/CBK/scripts/Trunkbuild.sh
+break
+
+${HOME}/CBK/scripts/boardbuild.sh
+break
+
+sh ${HOME}/CBK/scripts/buildpack
+break
+
+sh ${HOME}/CBK/scripts/buildimage
+break
+
+sh ${HOME}/CBK/scripts/cronospass
+break
+
+${HOME}/CBK/scripts/unmount.sh
+break
+chmod +x ${HOME}/CBK/scripts/buildimage
+sh ${HOME}/CBK/scripts/image2usb
+break
+read -r -p "Usb flashed; enjoy Chromium os!" key 
+[....]
+end
+

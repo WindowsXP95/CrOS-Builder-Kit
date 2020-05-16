@@ -1,0 +1,3 @@
+read -r -p "Image build"
+echo $path ./chromite/bin
+./chromite/bin/cros_sdk
