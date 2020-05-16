@@ -8,7 +8,7 @@ echo $path ./chromite/bin
 
 break
 break
-echo~/trunk/src/scripts $ export BOARD=x86-generic
+echo~/trunk/src/scripts $ export BOARD=amd64-generic
 
 
 break
